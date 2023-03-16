@@ -9,22 +9,22 @@ function PieDePagina () {
     return (
       <div className='contenedor-piedepagina'>
         <ul className='terminos-legales'>
-          <li><a href=''>Legal Warning</a></li>
-          <li><a href=''>Privacy Policy</a></li>
-          <li><a href=''>Cookies Policy</a></li>
-          <li><a href=''>Quality Policy</a></li>
+          <li><a href='x'>Legal Warning</a></li>
+          <li><a href='x'>Privacy Policy</a></li>
+          <li><a href='x'>Cookies Policy</a></li>
+          <li><a href='x'>Quality Policy</a></li>
         </ul>	
         <p className='titulo-footer'>The Rick and Morty</p>
         <div className='redes-sociales'>
-        <img src={facebook} href='' />
-        <img src={instagram} href='' />
-        <img src={youtube} href='' />
-        <img src={linkedin} href='' />
+        <img src={facebook} href='x' />
+        <img src={instagram} href='x' />
+        <img src={youtube} href='x' />
+        <img src={linkedin} href='x' />
         </div>          
         <ul className='enlaces de contacto'>
-          <li><a href=''>Blog</a></li>
-          <li><a href=''>Contact</a></li>
-          <li><a href=''>FAQs</a></li>
+          <li><a href='x'>Blog</a></li>
+          <li><a href='x'>Contact</a></li>
+          <li><a href='x'>FAQs</a></li>
         </ul>	
         <p className='copyright'>&copy Copyright Mayerlin Rojas - 2023</p>
       </div>

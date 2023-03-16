@@ -6,11 +6,11 @@ function Navegacion() {
         <div className='contenedor-encabezado'>
             <nav>
                 <ul className='navegacion'>
-                    <li><a href=''>Home</a></li>
-                    <li><a href=''>Chapters</a></li>
-                    <li><a href=''>Characters</a></li>
-                    <li><a href=''>About</a></li>
-                    <li><a href=''>Contact Us</a></li>
+                    <li className='elementos-navbar'><a href=''>Home</a></li>
+                    <li className='elementos-navbar'><a href=''>Chapters</a></li>
+                    <li className='elementos-navbar'><a href=''>Characters</a></li>
+                    <li className='elementos-navbar'><a href=''>About</a></li>
+                    <li className='elementos-navbar'><a href=''>Contact Us</a></li>
                 </ul>
             </nav>
         </div>        

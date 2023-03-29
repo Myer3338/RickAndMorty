@@ -1,0 +1,159 @@
+.Header {
+    width: 100%;
+    min-height: 49px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 14px;
+    position: absolute;
+    
+    &::before {
+        content: "";
+        position: absolute;
+        background: #873FC7;
+        mix-blend-mode: color-dodge;
+        backdrop-filter: unset;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    .logo {
+        width: 39px;
+        height: 36px;
+        min-width: 39px;
+        min-height: 36px;
+        z-index: 1;
+        background-image: url(/assets/images/logo.svg);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .menu {
+        width: 39px;
+        height: 36px;
+        min-width: 39px;
+        min-height: 36px;
+        z-index: 1;
+        display: none;
+        background-image: url(/assets/images/header/menu_open.svg);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        height: 49px;
+        z-index: 1;
+
+        ul {
+            width: auto;
+            height: 100%;
+            margin: 0;
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+    
+            li {
+                width: auto;
+                height: 100%;
+                margin: 0px 10px;
+                a {
+                    width: fit-content;
+                    min-width: 76px;
+                    height: 100%;
+                    padding: 8px;
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #FFFFFF;
+                    text-shadow: 2px 0 rgba(0, 0, 0, 0.25), -2px 0 rgba(0, 0, 0, 0.25), 0 2px rgba(0, 0, 0, 0.25), 0 -2px rgba(0, 0, 0, 0.25), 1px 1px rgba(0, 0, 0, 0.25), -1px -1px rgba(0, 0, 0, 0.25), 1px -1px rgba(0, 0, 0, 0.25), -1px 1px rgba(0, 0, 0, 0.25);
+                    text-decoration: none;
+                    border-radius: 20px;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+
+                    &:hover, &.active  {
+                        background: #23A6B6;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 648px) {
+    .Header {
+        display: flex;
+        flex-direction: column;
+        min-height: 49px;
+        height: fit-content;
+
+        &::before {
+            background: #D9D9D9;
+            // backdrop-filter: blur(1px);
+            mix-blend-mode: hue;
+        }
+
+        &.open {
+            nav {
+                &:nth-child(2) {
+                    display: flex;
+                }
+            }
+
+            .logo {
+                width: 110px;
+                min-width: 110px;
+                background-image: url(/assets/images/logo_name.png);
+            }
+
+            .menu {
+                background-image: url(/assets/images/header/menu_close.svg);
+            }
+
+            &::before {
+                background: #D9D9D9;
+                // backdrop-filter: blur(1px);
+                mix-blend-mode: hue;
+            }
+        }
+
+        .menu {
+            display: block;
+        }
+
+        nav {
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+            min-height: 49px;
+            height: auto;
+
+            &:nth-child(2) {
+                justify-content: center;
+                display: none;
+            }
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding: 0;
+            }
+        }
+    }
+}

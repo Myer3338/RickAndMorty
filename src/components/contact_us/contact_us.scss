@@ -1,0 +1,152 @@
+@import url('https://fonts.cdnfonts.com/css/baloo');
+
+
+.ContactUs {
+    margin-top: 49px;
+    width: 100%;
+    height: fit-content;
+    min-height: calc(100vh - 177px);
+    background: #262C3A;
+
+    section {
+        &.contact_us-container {
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+            max-width: 689px;
+            display: grid;
+            grid-template-columns: repeat(12, minmax(0, 1fr));
+            gap: 49px;
+            padding: 40px;
+
+            .left {
+                grid-column: auto / span 6;
+
+                h2.title {
+                    display: none;
+                    text-align: center;
+                    font-family: 'Kaushan Script';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 40px;
+                    line-height: 58px;
+                    color: #FFFFFF;
+                    margin-top: 0;
+                    text-shadow: 2px 0 rgba(0, 0, 0, 0.25), -2px 0 rgba(0, 0, 0, 0.25), 0 2px rgba(0, 0, 0, 0.25), 0 -2px rgba(0, 0, 0, 0.25), 1px 1px rgba(0, 0, 0, 0.25), -1px -1px rgba(0, 0, 0, 0.25), 1px -1px rgba(0, 0, 0, 0.25), -1px 1px rgba(0, 0, 0, 0.25);
+                }
+
+                form {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    background: #FFFFFF;
+                    border-radius: 20px;
+                    padding: 40px;
+                    padding-bottom: 21px;
+
+                    h2 {
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 18px;
+                        display: flex;
+                        align-items: center;
+                        text-align: center;
+                        text-transform: uppercase;
+                        color: #000000;
+                        margin-bottom: 26px;
+                    }
+                    
+                    input, textarea {
+                        background: #F5F8FA;
+                        border: 1px solid rgba(0, 0, 0, 0.12);
+                        border-radius: 5px;
+                        width: 100%;
+                        min-height: 28px;
+                        padding: 8px 12px;
+                        margin-bottom: 12px;
+                    }
+
+                    textarea {
+                        min-height: 50px;
+                    }
+
+                    button {
+                        background: #23A6B6;
+                        border: 5px solid #2DB4CA;
+                        border-radius: 50px;
+                        padding: 8px 19px;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 18px;
+                        color: #FFFFFF;
+                    }
+                }
+            }
+
+            .right {
+                grid-column: auto / span 6;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+
+                h2 {
+                    text-align: center;
+                    font-family: 'Kaushan Script';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 40px;
+                    line-height: 58px;
+                    color: #FFFFFF;
+                    margin-top: 0;
+                    text-shadow: 2px 0 rgba(0, 0, 0, 0.25), -2px 0 rgba(0, 0, 0, 0.25), 0 2px rgba(0, 0, 0, 0.25), 0 -2px rgba(0, 0, 0, 0.25), 1px 1px rgba(0, 0, 0, 0.25), -1px -1px rgba(0, 0, 0, 0.25), 1px -1px rgba(0, 0, 0, 0.25), -1px 1px rgba(0, 0, 0, 0.25);
+                }
+            }
+        }
+    }
+
+    .scroll-top-container {
+        position: sticky;
+        bottom: 0px;
+        padding: 10px;
+        display: none;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+
+        a {
+            cursor: pointer;
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .ContactUs {
+        min-height: calc(100vh - 286px);
+
+        section {
+            &.contact_us-container {
+                gap: 0;
+
+                .left {
+                    grid-column: auto/span 12;
+
+                    h2.title {
+                        display: block;
+                    }
+                }
+                .right {
+                    display: none;
+                }
+            }
+        }
+
+        .scroll-top-container {
+            display: flex;
+        }
+    }
+}

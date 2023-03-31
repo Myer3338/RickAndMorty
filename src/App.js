@@ -7,6 +7,7 @@ import ContactUs from './components/contact_us/contact_us';
 import Notfound from './components/notfound/notfound';
 import Header from './components/header/header'
 import Footer from './components/footer/footer';
+import RandomFuncion from './components/random/random'
 import './App.scss'
 
 
@@ -20,6 +21,7 @@ const App = () => (
       <Route path="/about" element={<About/>} />
       <Route path="/contactUs" element={<ContactUs/>} />
       <Route path='*' element={<Notfound />} />
+      <Route path='random' element={<RandomFuncion />} />
     </Routes>
     <Footer />      
   </Router>  

@@ -3,6 +3,8 @@ import textLogo from '../../assets/images/logo_name.png';
 import buttonImage from '../../assets/images/image_button.png';
 import arrowImage from '../../assets/images/arrow.png';
 import '../../pages/home/home.scss';
+import {  NavLink } from "react-router-dom";
+
 
 const Home = () => {
   return (
@@ -12,11 +14,13 @@ const Home = () => {
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia cupiditate cumque non facere minima neque magni alias natus aut dolore id et ratione, dolorum veniam asperiores nemo, commodi itaque porro?</p>
             </section>
             <section className='right'>
-                <h2>PUSH ME</h2>
+                <h2>PUSH ME</h2>                
                 <img src={arrowImage} alt='arrow'></img>
-                <a href='#' className='actionButton'>
+                <NavLink to={`random`}>
+                <a className='actionButton'>
                     <img src={buttonImage} alt=''></img>
                 </a>
+                </NavLink>
             </section>
         </main>
   )

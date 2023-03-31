@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../../pages/chapters/carchapter/carchapter.scss'
+import '../../../pages/chapters/capitulosContainer/chapterContainer.scss'
 import Cardchapter from '../carchapter/carchapter'
 
 const ChapterContainer = ( {capitulos} ) => {

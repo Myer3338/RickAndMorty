@@ -1,8 +1,8 @@
 import React from 'react'
-import textLogo from '../../../assets/images/logo_name.png';
-import buttonImage from '../../../assets/images/image_button.png';
-import arrowImage from '../../../assets/images/arrow.png';
-import './home.scss';
+import textLogo from '../../assets/images/logo_name.png';
+import buttonImage from '../../assets/images/image_button.png';
+import arrowImage from '../../assets/images/arrow.png';
+import '../../pages/home/home.scss';
 
 const Home = () => {
   return (

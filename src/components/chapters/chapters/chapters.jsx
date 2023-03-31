@@ -1,7 +1,7 @@
 import { async } from 'q'
 import React,{ useState, useEffect } from 'react'
 import ChapterContainer from '../capitulosContainer/chapterContainer'
-import '../../../pages/chapters/chapters/chapter.scss'
+import '../../../pages/chapters/chapters/chapters.scss'
 
 const Chapters = () => {
     const [capitulos,setCapitulos] = 

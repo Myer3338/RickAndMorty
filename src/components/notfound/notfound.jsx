@@ -19,7 +19,7 @@ class notfound extends Component {
         </div>
         <div className='goHouse'>
           <h3>Volver a casa: </h3>
-          <Link to='/home' className='textRouternf'>
+          <Link to='/' className='textRouternf'>
 
             <button className='buttonGradient'>
               Aqui

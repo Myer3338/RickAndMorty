@@ -15,5 +15,5 @@ export default function About() {
                 <img src={characterImage} alt=''></img>
             </section>
         </main>
-    )
+    ) 
 }

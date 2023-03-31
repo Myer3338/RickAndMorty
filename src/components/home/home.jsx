@@ -1,12 +1,12 @@
-import './main.scss';
-import textLogo from '../../assets/images/logo_name.png';
-import buttonImage from '../../assets/images/image_button.png';
-import arrowImage from '../../assets/images/arrow.png';
+import React from 'react'
+import textLogo from '../../../assets/images/logo_name.png';
+import buttonImage from '../../../assets/images/image_button.png';
+import arrowImage from '../../../assets/images/arrow.png';
+import './home.scss';
 
-
-export default function Main() {
-    return (
-        <main className='Main'>
+const Home = () => {
+  return (
+    <main className='Main'>
             <section className='left'>
                 <img src={textLogo} alt=''></img>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia cupiditate cumque non facere minima neque magni alias natus aut dolore id et ratione, dolorum veniam asperiores nemo, commodi itaque porro?</p>
@@ -19,5 +19,7 @@ export default function Main() {
                 </a>
             </section>
         </main>
-    )
+  )
 }
+
+export default Home

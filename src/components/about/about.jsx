@@ -1,4 +1,4 @@
-import './about.scss';
+import '../../pages/about/about.scss';
 import textLogo from '../../assets/images/logo_name.png';
 import characterImage from '../../assets/images/about/character_image.png';
 

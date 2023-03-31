@@ -1,0 +1,17 @@
+.chapters-container {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 689px;
+    display: flex;
+    flex-direction: column;
+    gap: 49px;
+}
+
+.chapters-card-container {
+    grid-column: auto / span 12;
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: 49px;
+    padding: 0 40px;
+    margin-bottom: 40px;
+}

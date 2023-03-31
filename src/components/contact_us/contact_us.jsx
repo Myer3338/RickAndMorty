@@ -1,4 +1,4 @@
-import './contact_us.scss';
+import '../../pages/contact_us/contact_us';
 import scrollTopImage from '../../assets/images/scroll_top_icon.svg';
 import rightImage from '../../assets/images/contact_us/right_image.png';
 export default function ContactUs() {

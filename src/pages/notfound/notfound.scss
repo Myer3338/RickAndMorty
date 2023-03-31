@@ -1,0 +1,62 @@
+.containerNotFound{
+    margin-top: 4em;
+    display: flex;
+    color: #22303a;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    flex-direction: column;
+    height: 80vh;
+    @media (max-width:768px){
+        justify: center;
+        font-size: 13px;
+    }
+}
+
+.animationLottie{
+    width: 40em;
+    height: 20em;
+    @media (max-width:768px){
+        width: 20em;
+        height: 10em;
+    }
+}
+
+.goHouse{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.buttonGradient{
+    background: linear-gradient(to rigth, #1a2980 0%, #26d0ce 51%, #1a2980 100%);
+    margin: 1.5em 1em;
+    width: 8em;
+    padding: 3px;
+    height: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    display: block;
+    &:hover {
+        background-position: right center;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    @media (max-width:768px){
+        justify: center;
+        font-size: 13px;
+        width: 7em;
+        height: 25em;
+        padding: 3px;
+    }
+}

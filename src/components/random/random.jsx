@@ -16,3 +16,4 @@ const RandomFuncion = () => {
   return ( <RandomContainer randomPersonaje={random} /> )
 }
 export default RandomFuncion
+

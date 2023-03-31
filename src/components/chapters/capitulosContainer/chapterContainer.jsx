@@ -1,11 +1,13 @@
 import React from 'react'
 import '../../../pages/chapters/capitulosContainer/chapterContainer.scss'
 import Cardchapter from '../carchapter/carchapter'
+import BasicPagination from '../paginacionChapter/paginacionChapter'
+
 
 const ChapterContainer = ( {capitulos} ) => {
   return (
     <>
-      
+      <div className='chapters-container '>
       {capitulos.map ( c =>           
         <Cardchapter
           key = {c.id}
@@ -17,6 +19,8 @@ const ChapterContainer = ( {capitulos} ) => {
           created = {c.created} 
         />)        
       }      
+      </div>
+      <BasicPagination />     
     </>
   )
 }

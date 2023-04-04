@@ -4,7 +4,7 @@ import '../../../pages/random/randomContainer/randomContainer.scss'
 
 const RandomContainer = ( { randomPersonaje } ) => {  
  
-  const  rp = randomPersonaje[Math.round(Math.random() * randomPersonaje.length)]
+  const  rp = randomPersonaje[Math.round(Math.random() * (randomPersonaje.length - 1))]
   console.log(rp);
     if (!rp) {
       return;

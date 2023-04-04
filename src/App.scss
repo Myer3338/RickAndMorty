@@ -11,4 +11,6 @@
 
 .ContenedorPrincipal{
     margin-top: 49px;
+    min-height: calc(100vh - 177px);
+    height: fit-content;
 }

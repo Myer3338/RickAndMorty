@@ -1,7 +1,6 @@
 import React from 'react'
 import '../../../pages/characters/cardcharacter/carcharacter.scss'
 import Cardcharacters from '../cardcharacter/carcharacter'
-import BasicPagination from '../paginacionCharacter/CharacterPaginacion'
 
 const CharacterContainer = ( {personajes} ) => {
   return (
@@ -16,11 +15,12 @@ const CharacterContainer = ( {personajes} ) => {
             species = {p.species}
             gender = {p.gender}          
             image = {p.image} 
-            created = {p.created}           
+            created = {p.created}
+            origin = {p.origin.name}
+            location = {p.location.name}
           />)        
         }       
       </div>
-      <BasicPagination />      
     </>
   )
 }

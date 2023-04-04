@@ -1,7 +1,6 @@
 import React from 'react'
 import '../../../pages/chapters/capitulosContainer/chapterContainer.scss'
 import Cardchapter from '../carchapter/carchapter'
-import BasicPagination from '../paginacionChapter/paginacionChapter'
 
 
 const ChapterContainer = ( {capitulos} ) => {
@@ -16,11 +15,11 @@ const ChapterContainer = ( {capitulos} ) => {
           air_date = {c.air_date}
           episode = {c.episode}
           characters = {c.characters} 
-          created = {c.created} 
+          created = {c.created}
+          image = {c.image}
         />)        
       }      
       </div>
-      <BasicPagination />     
     </>
   )
 }

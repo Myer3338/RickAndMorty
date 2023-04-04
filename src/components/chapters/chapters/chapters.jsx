@@ -3,14 +3,15 @@ import React, { useState, useEffect } from 'react'
 import ChapterContainer from '../capitulosContainer/chapterContainer'
 import Pagination from '@mui/material/Pagination';
 import Stack from '@mui/material/Stack';
-import '../../../pages/chapters/chapters/chapters.scss'
+import '../../../pages/chapters/chapters.scss'
 
 const Chapters = () => {
   const [pages, setPages] = useState(0);
   const [capitulos, setCapitulos] = useState([]);
   const [page, setPage] = React.useState(1);
-  const handleChange = ( value) => {
+  const handleChange = (event, value) => {
     setPage(value);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
   useEffect(() => { consumeApiCapitulos() }, [page])
   const consumeApiCapitulos = async () => {
@@ -28,10 +29,12 @@ const Chapters = () => {
   }
 
   return (<>
-    <ChapterContainer capitulos={capitulos} />
-    <Stack spacing={2}>
-      <Pagination count={pages} page={page} onChange={handleChange} />
-    </Stack>
+    <main className="Chapters">
+      <ChapterContainer capitulos={capitulos} />
+      <Stack spacing={2}>
+        <Pagination count={pages} page={page} onChange={handleChange} />
+      </Stack>
+    </main>
   </>)
 }
 export default Chapters

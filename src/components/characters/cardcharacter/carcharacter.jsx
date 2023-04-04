@@ -3,11 +3,10 @@ import Card from '@mui/material/Card';
 import CardHeader from '@mui/material/CardHeader';
 import CardMedia from '@mui/material/CardMedia';
 import CardContent from '@mui/material/CardContent';
-import Typography from '@mui/material/Typography';
 
 export default function RecipeReviewCard({ id,name,status,species,gender,image,created,origin,location }) {
   return (
-    <Card sx={{ maxWidth: 345 }}>      
+    <Card className='character-card'>      
       <CardMedia
         component="img"
         height="194"
@@ -20,17 +19,26 @@ export default function RecipeReviewCard({ id,name,status,species,gender,image,c
         subheader={gender}
       />
       <CardContent>
-        <Typography variant="body2" color="text.secondary">
-          Status = {status}
-          <br />
-          Specie = {species}         
-          <br />
-          Created = {created}
-          <br />
-          Origin = {origin}
-          <br />
-          Location = {location}
-        </Typography>
+          <div className='info-item'>
+            <p>Status:</p>
+            <p>{status}</p>
+          </div>
+          <div className='info-item'>
+            <p>Specie:</p>
+            <p>{species}</p>
+          </div>
+          <div className='info-item'>
+            <p>Created:</p>
+            <p>{created}</p>
+          </div>
+          <div className='info-item'>
+            <p>Origin:</p>
+            <p>{origin}</p>
+          </div>
+          <div className='info-item'>
+            <p>Location:</p>
+            <p>{location}</p>
+          </div>
       </CardContent>      
     </Card>
   );

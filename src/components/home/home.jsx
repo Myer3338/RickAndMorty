@@ -9,20 +9,18 @@ import {  NavLink } from "react-router-dom";
 const Home = () => {
   return (
     <main className='Main'>
-            <section className='left'>
-                <img src={textLogo} alt=''></img>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia cupiditate cumque non facere minima neque magni alias natus aut dolore id et ratione, dolorum veniam asperiores nemo, commodi itaque porro?</p>
-            </section>
-            <section className='right'>
-                <h2>PUSH ME</h2>                
-                <img src={arrowImage} alt='arrow'></img>
-                <NavLink to={`random`}>
-                <a className='actionButton'>
-                    <img src={buttonImage} alt=''></img>
-                </a>
-                </NavLink>
-            </section>
-        </main>
+        <section className='left'>
+            <img src={textLogo} alt=''></img>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia cupiditate cumque non facere minima neque magni alias natus aut dolore id et ratione, dolorum veniam asperiores nemo, commodi itaque porro?</p>
+        </section>
+        <section className='right'>
+            <h2>PUSH ME</h2>                
+            <img src={arrowImage} alt='arrow'></img>
+            <NavLink to={`random`} className='actionButton'>
+              <img src={buttonImage} alt=''></img>
+            </NavLink>
+        </section>
+    </main>
   )
 }
 

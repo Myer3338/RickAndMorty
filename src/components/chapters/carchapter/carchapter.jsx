@@ -8,7 +8,7 @@ import CardMedia from '@mui/material/CardMedia';
 export default function RecipeReviewCard({ id,name,air_date,episode,characters,created,image })
  {
   return (
-    <Card sx={{ maxWidth: 345 }}>      
+    <Card className='chapter-card'>      
       <CardMedia
         component="img"
         height="194"
@@ -21,12 +21,18 @@ export default function RecipeReviewCard({ id,name,air_date,episode,characters,c
         subheader={episode}
       />      
       <CardContent>
-        <Typography variant="body2" color="text.secondary">
-            Air_date = {air_date}
-            <br />
-            Created = {created}
-            <br />
-        </Typography>
+        <div className='info-item'>
+          <p>
+            Air_date:
+          </p>
+          <p>{air_date}</p>
+        </div>
+        <div className='info-item'>
+          <p>
+            Created:
+          </p>
+          <p>{created}</p>
+        </div>
       </CardContent>      
     </Card>
   );

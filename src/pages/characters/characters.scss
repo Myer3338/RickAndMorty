@@ -2,7 +2,7 @@
 
 
 .Characters {
-    margin-top: 49px;
+    padding-top: 49px;
     width: 100%;
     height: fit-content;
     min-height: calc(100vh - 177px);
@@ -49,7 +49,7 @@
                 grid-column: auto / span 12;
                 display: grid;
                 grid-template-columns: repeat(12, minmax(0, 1fr));
-                gap: 49px;
+                gap: 26px;
                 padding: 0 40px;
                 margin-bottom: 40px;
 
@@ -63,9 +63,49 @@
                     display: flex;
                     flex-direction: column;
                     align-items: flex-start;
-                    justify-content: space-between;
+                    gap: 12px;
                     box-shadow: 0px 0px 7px 3px #31777c;
                     cursor: pointer;
+
+                    .MuiCardHeader-root {
+                        width: 100%;
+                        padding: 0 0;
+
+                        .MuiCardHeader-content {
+                            .MuiCardHeader-title {
+                                font-size: 18px;
+                                font-weight: 700;
+                                line-height: 19px;
+                            }
+
+                            .MuiCardHeader-subheader {
+                                font-size: 12px;
+                            }
+                        }
+                    }
+
+                    .MuiCardContent-root {
+                        padding: 0 0;
+
+                        .info-item {
+                            margin-bottom: 5px;
+                            p {
+                                &:nth-child(1) {
+                                    font-size: 12px;
+                                    line-height: 1;
+                                    font-weight: 500;
+                                }
+
+                                &:nth-child(2) {
+                                    font-size: 10px;
+                                    line-height: 1;
+                                    color: rgba(0, 0, 0, 0.6);
+                                    font-family: "Roboto","Helvetica","Arial",sans-serif;
+                                    font-weight: 400;
+                                }
+                            }
+                        }
+                    }
 
                     &:hover {
                         transform: scale(1.01);
@@ -87,6 +127,26 @@
                         line-height: 22px;
                         color: #000000;
                     }
+                }
+            }
+        }
+    }
+
+    .MuiPagination-root {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 26px;
+
+        .MuiPagination-ul {
+            .MuiButtonBase-root {
+                color: white;
+
+                &.Mui-selected {
+                    background-color: #ffffff91;
+                    color: black;
+                    font-weight: 900;
                 }
             }
         }

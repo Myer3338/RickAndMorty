@@ -16,6 +16,7 @@ const Header = () => {
           <ul>
             <li>
               <NavLink
+                    onClick={() => setOpen(!open)}
                     to={`/`}
                     className={({ isActive, isPending }) =>
                       isActive
@@ -30,6 +31,7 @@ const Header = () => {
             </li>
             <li>
               <NavLink
+                    onClick={() => setOpen(!open)}
                     to={`chapters`}
                     className={({ isActive, isPending }) =>
                       isActive
@@ -44,6 +46,7 @@ const Header = () => {
             </li>
             <li>
               <NavLink
+                    onClick={() => setOpen(!open)}
                     to={`characters`}
                     className={({ isActive, isPending }) =>
                       isActive
@@ -58,6 +61,7 @@ const Header = () => {
             </li>
             <li>
               <NavLink
+                    onClick={() => setOpen(!open)}
                     to={`about`}
                     className={({ isActive, isPending }) =>
                       isActive
@@ -72,6 +76,7 @@ const Header = () => {
             </li>
             <li>
               <NavLink
+                    onClick={() => setOpen(!open)}
                     to={`contactUs`}
                     className={({ isActive, isPending }) =>
                       isActive

@@ -13,7 +13,10 @@ const RandomFuncion = () => {
         setPersonajes(dataJson.results)        
     }    
 
-  return ( <RandomContainer randomPersonaje={random} /> )
+  return ( 
+    <main className="randomCharacters">
+    <RandomContainer randomPersonaje={random} /> 
+    </main>)
 }
 export default RandomFuncion
 

@@ -5,45 +5,42 @@ import CardHeader from '@mui/material/CardHeader';
 import CardMedia from '@mui/material/CardMedia';
 import CardContent from '@mui/material/CardContent';
 import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
 
-
-
-const ExpandMore = styled((props) => {
-  const { expand, ...other } = props;
-  return <IconButton {...other} />;
-})(({ theme, expand }) => ({
-  transform: !expand ? 'rotate(0deg)' : 'rotate(180deg)',
-  marginLeft: 'auto',
-  transition: theme.transitions.create('transform', {
-    duration: theme.transitions.duration.shortest,
-  }),
-}));
-
-
-export default function RecipeReviewCard({ id,name,status,species,gender,image,created }) {
+export default function RecipeReviewCard({ id,name,status,species,gender,image,created,origin,location  }) {
   return (
-    <Card sx={{ maxWidth: 345 }}>
-      <CardHeader
-        id = {id}       
-        title={name}
-        subheader={gender}
-      />
+    <Card className='character-card'>
       <CardMedia
         component="img"
         height="194"
         image={image}
         alt="Paella dish"
       />
+      <CardHeader
+        id = {id}       
+        title={name}
+        subheader={gender}
+      />      
       <CardContent>
-        <Typography variant="body2" color="text.secondary">
-          Status = {status}
-          <br />
-          Specie = {species}         
-          <br />
-          Created = {created}
-          
-        </Typography>
+      <div className='info-item'>
+            <p>Status:</p>
+            <p>{status}</p>
+          </div>
+          <div className='info-item'>
+            <p>Specie:</p>
+            <p>{species}</p>
+          </div>
+          <div className='info-item'>
+            <p>Created:</p>
+            <p>{created}</p>
+          </div>
+          <div className='info-item'>
+            <p>Origin:</p>
+            <p>{origin}</p>
+          </div>
+          <div className='info-item'>
+            <p>Location:</p>
+            <p>{location}</p>
+          </div>
       </CardContent>      
     </Card>
   );

@@ -11,21 +11,21 @@ import RandomFuncion from './components/random/random'
 import './App.scss'
 
 const App = () => (  
-  <Router>    
+  <div className='App'>
+    <Router>    
     <Header />
-    <div className='ContenedorPrincipal'>
     <Routes>
-        <Route path="/" element={<Home/>} />
-            <Route path="/chapters" element={<Chapters/>} />    
-            <Route path="/characters" element={<CharactersFuncion/>} />
-            <Route path="/about" element={<About/>} />
-            <Route path="/contactUs" element={<ContactUs/>} />
-            <Route path='*' element={<Notfound />} />
-            <Route path='random' element={<RandomFuncion />} />
-        </Routes> 
-    </div>      
+      <Route path="/" element={<Home/>} />
+      <Route path="/chapters" element={<Chapters/>} />    
+      <Route path="/characters" element={<CharactersFuncion/>} />
+      <Route path="/about" element={<About/>} />
+      <Route path="/contactUs" element={<ContactUs/>} />
+      <Route path='*' element={<Notfound />} />
+      <Route path='random' element={<RandomFuncion />} />
+    </Routes>    
     <Footer />    
   </Router>
+  </div>
 )
 
 export default App;
